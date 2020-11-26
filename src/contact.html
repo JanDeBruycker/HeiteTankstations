@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Heite Tankstations - Contact</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="contact.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+        <!-- Contains bg-image (SEE STYLE.CSS) -->
+        </header>
+        <nav>
+            <a href="./index.html#main_img">Home</a>
+            <a href="./pomp.html#main_img">Pomp</a>
+            <a href="./shop.html#main_img">Shop</a>
+            <a href="./contact.html#main_img">Contact</a>
+        </nav>
+        <figure id="main_img" class="topic_img">
+            <img src="./img/heite_home.jpg" />
+        </figure>
+
+        <main>
+            <div class="header_background">
+                <h3>Openingsuren</h3>
+            </div>
+            <table class="openinghours">
+                <tr>
+                    <td>Ma</td><td>Di</td><td>Woe</td><td>Do</td><td>Vrij</td><td>Za</td><td>Zo</td>
+                </tr>
+                <tr>
+                    <td>9u - 19u</td><td>9u - 19u</td><td>9u - 19u</td><td>9u - 19u</td><td>9u - 19u</td><td>9u - 18u</td><td>---</td>
+                </tr>
+            </table>
+            <div class="header_background">
+                <h3>Contactinformatie</h3>
+            </div>
+            <ul>
+                <li>R. Colaertplein 33 - 8900 IEPER</li>
+                <li>heite.tankstations@gmail.com</li>
+                <li>057/20.14.52</li>
+            </ul>
+            <div class="header_background">
+                <h3>Probleem melden</h3>
+            </div>
+            <form action="mailto:heite.tankstations@gmail.com?subject=Melding probleem (klant)" method="post" enctype="text/plain">
+                <label for="subject">Onderwerp:</label><br />
+                <input type="text" name="subject" required />
+                <input list="locations" name="location" required />
+                <datalist id="locations">
+                    <option value="Pomp">
+                    <option value="Shop">
+                </datalist><br /><br />
+                <label for="message">Bericht:</label><br />
+                <textarea name="message" rows="10" cols="43" maxlength="440" required></textarea><br /><br />
+                <input class="input_btn" type="submit" value="Verzenden" />
+            </form>
+        </main>
+
+        <footer>
+            <span>© Jan De Bruycker</span>
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Heite Tankstations - Shop</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="shop.css" rel="stylesheet" type="text/css" />
+        <script src="shop_script.js" defer></script>
+    </head>
+    <body>
+        <header>
+        <!-- Contains bg-image (SEE STYLE.CSS) -->
+        </header>
+        <nav>
+            <a href="./index.html#main_img">Home</a>
+            <a href="./pomp.html#main_img">Pomp</a>
+            <a href="./shop.html#main_img">Shop</a>
+            <a href="./contact.html#main_img">Contact</a>
+        </nav>
+        <figure id="main_img" class="topic_img">
+            <img src="./img/heite_home.jpg" />
+        </figure>
+
+        <main>
+            <section>
+                <div class="header_background">
+                    <h2>Winkel</h2>
+                </div>
+                <ul>
+                    <div id="shop_drank" class="shop_article_background" onclick="toggleShopDrankImg()"> 
+                        <li><h3>Drank<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Frisdrank</li>
+                            <li>Energiedrank</li>
+                            <li>Alcohol (Bier/Wijn/Sterke Drank)</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_drank_img">
+                        <img class="shop_img triple" src="./img/shop_frisdrank.jpg" />
+                        <img class="shop_img triple" src="./img/shop_alcohol1.jpg" />
+                        <img class="shop_img triple" src="./img/shop_alcohol2.jpg" />
+                    </figure>
+                    <div id="shop_confis" class="shop_article_background" onclick="toggleShopConfisImg()"> 
+                        <li><h3>Confisserie<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Snoep</li>
+                            <li>Chips</li>
+                            <li>Koeken</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_confisserie_img">
+                        <img class="shop_img double" src="./img/shop_confisserie.jpg" />
+                        <img class="shop_img double" src="./img/shop_chips.jpg" />
+                    </figure>
+                    <div id="shop_tabakswaren" class="shop_article_background" onclick="toggleShopTabakswarenImg()"> 
+                        <li><h3>Tabakswaren<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Sigaretten</li>
+                            <li>Tabak</li>
+                            <li>Potten</li>
+                            <li>Emmers</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_tabakswaren_img">
+                        <img class="shop_img triple" src="./img/shop_sigaretten.jpg" />
+                        <img class="shop_img triple" src="./img/shop_tabak.jpg" />
+                        <img class="shop_img triple" src="./img/shop_potten.jpg" />
+                        <img class="shop_img triple" src="./img/shop_emmers.jpg" />
+                    </figure>
+                    <div id="shop_toebehoren" class="shop_article_background" onclick="toggleShopToebehorenImg()"> 
+                        <li><h3>Toebehoren<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Vloeitjes</li>
+                            <li>Filters</li>
+                            <li>Hulzen</li>
+                            <li>Schieters</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_toebehoren_img">
+                        <img class="shop_img single" src="./img/shop_toebehoren.jpg" />
+                    </figure>
+                    <div id="shop_voeding" class="shop_article_background" onclick="toggleShopVoedingImg()"> 
+                        <li><h3>Voeding<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Conserven</li>
+                            <li>Bereide maaltijden</li>
+                            <li>Honden/Kattenvoer</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_voeding_img">
+                        <img class="shop_img single" src="./img/shop_voeding.jpg" />
+                    </figure>
+                    <div id="shop_vers" class="shop_article_background" onclick="toggleShopVersImg()"> 
+                        <li><h3>Vers<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Belegde broodjes</li>
+                            <li>Sandwiches/Croissants</li>
+                            <li>Boterhammen</li>
+                            <li>Beleg</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_vers_img">
+                        <img class="shop_img single" src="./img/shop_vers.jpg" />
+                    </figure>
+                    <div id="shop_allerlei" class="shop_article_background" onclick="toggleShopAllerleiImg()"> 
+                        <li><h3>Allerlei<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Koffie</li>
+                            <li>Kuisproducten</li>
+                            <li>Keuken/Toiletpapier</li>
+                            <li>Persoonlijke hygiëne</li>
+                        </ul>
+                    </div>
+                    <figure id="shop_allerlei_img">
+                        <img class="shop_img single" src="./img/shop_allerlei.jpg" />
+                    </figure>
+                </ul>
+            </section>
+            <section>
+                <div class="header_background">
+                    <h2>Garage</h2>
+                </div>
+                <ul>
+                    <div id="garage_hout" class="shop_article_background" onclick="toggleGarageHoutImg()"> 
+                        <li><h3>Hout<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Pallet</li>
+                            <li>Aanmaakhout</li>
+                            <li>Blokken hout (€2/€4)</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_hout_img">
+                        <img class="shop_img double" src="./img/shop_aanmaakhout.jpg" />
+                        <img class="shop_img double" src="./img/shop_houtblokken.jpg" />
+                    </figure>
+                    <div id="garage_kolen" class="shop_article_background" onclick="toggleGarageKolenImg()"> 
+                        <li><h3>Kolen<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>12/22 (25kg)</li>
+                            <li>20/30 (25kg)</li>
+                            <li>Houtskool (4kg/10kg)</li>
+                            <li>Briketten (10kg)</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_kolen_img">
+                        <img class="shop_img triple" src="./img/shop_kolen.jpg" />
+                        <img class="shop_img triple" src="./img/shop_houtskool.jpg" />
+                        <img class="shop_img triple" src="./img/shop_briketten.jpg" />
+                    </figure>
+                    <div id="garage_pellets" class="shop_article_background" onclick="toggleGaragePelletsImg()"> 
+                        <li><h3>Pellets<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Badger (15kg)</li>
+                            <li>Clear-Energy (15kg)</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_pellets_img">
+                        <img class="shop_img single" src="./img/shop_pellets.jpg" />
+                    </figure>
+                    <div id="garage_gasflessen" class="shop_article_background" onclick="toggleGarageGasflessenImg()">
+                        <li><h3>Gasflessen<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>Butaan (12.5kg)</li>
+                            <li>Propaan (10kg)</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_gasflessen_img">
+                        <img class="shop_img single" src="./img/shop_gasflessen.jpg" />
+                    </figure>
+                    <div id="garage_onderhoud" class="shop_article_background" onclick="toggleGarageOnderhoudImg()">
+                        <li><h3>Onderhoud<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>AD Blue (5l)</li>
+                            <li>Koelvloeistof (1l)</li>
+                            <li>Ruitensproeiervloeistof (2l/5l)</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_onderhoud_img">
+                        <img class="shop_img single" src="./img/shop_onderhoud.jpg" />
+                    </figure>
+                    <div id="garage_olie" class="shop_article_background" onclick="toggleGarageOlieImg()">
+                        <li><h3>Olie<span class="info_text">(click me)</span></h3></li>
+                        <ul class="horizontal_list">
+                            <li>5W40</li>
+                            <li>15W40</li>
+                            <li>2-Takt Olie</li>
+                        </ul>
+                    </div>
+                    <figure id="garage_olie_img">
+                        <img class="shop_img single" src="./img/shop_olie.jpg" />
+                    </figure>
+                </ul>
+            </section>
+          </main>
+
+        <footer>
+            <span>© Jan De Bruycker</span>
+        </footer>
+  </body>
+</html>

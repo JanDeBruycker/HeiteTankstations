@@ -1,0 +1,38 @@
+.fuel {
+    margin: 20px;
+    padding: 0 15px 0 15px;
+    width: auto;
+    height: 25%;
+    line-height: 115px;
+    color: white;
+    display: inline-flex;
+    font-size: 24px;
+}
+.lv98 {
+    background-color: rgb(0, 100, 0);
+}
+.lv95 {
+    background-color: rgb(0, 190, 0);
+}
+.diesel {
+    background-color: black;
+}
+.gasoil {
+    background-color: red;
+}
+.petrol {
+    background-color: yellow;
+}
+.twtakt {
+    background-color: yellowgreen;
+}
+
+.payment {
+    margin: 20px;
+    width: 13.5%;
+    height: 10%;
+    display: inline-flex;
+}
+.payment img {
+    border-radius: 0;
+}

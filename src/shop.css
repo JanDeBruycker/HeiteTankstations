@@ -1,0 +1,22 @@
+.shop_img {
+    margin: 20px 5px 20px 0;
+    max-height: 250px;
+}
+.shop_img.single {
+    max-width: 550px;
+}
+.shop_img.double {
+     max-width: 425px;
+}
+.shop_img.triple {
+    max-width: 250px;
+}
+
+.shop_article_background {
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-bottom: 7.5px;
+    padding: 1px 7.5px 15px 0;
+    border-radius: 15px;
+    transition-property: all;
+    transition-duration: 800ms;
+}
